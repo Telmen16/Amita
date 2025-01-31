@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Amita</title>
+
+    <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/header_footer.css" />
+  </head>
+
+  <body>
+    <header-part></header-part>
+
+    <main>
+      <section class="Slider">
+        <h4 style="display: none">1</h4>
+        <picture class="slide">
+          <source data-srcset="./homePage_image/1.png" media="(min-width:1020px)" />
+          <source data-srcset="./homePage_image/1.png" media="(min-width:800px)" />
+          <img src="./homePage_image/1.png" alt="cake1" />
+        </picture>
+        <picture class="slide">
+          <source data-srcset="./homePage_image/news1.webp" media="(min-width:1020px)" />
+          <source data-srcset="./homePage_image/news1.webp" media="(min-width:800px)" />
+          <img src="./homePage_image/news1.webp" alt="cake2" />
+        </picture>
+        <picture class="slide">
+          <source data-srcset="./homePage_image/3.webp" media="(min-width:1020px)" />
+          <source data-srcset="./homePage_image/3.webp" media="(min-width:800px)" />
+          <img src="./homePage_image/3.webp" alt="cake3" />
+        </picture>
+      </section>
+      <script src="./javascript/slider.js"></script>
+
+      <section class="product">
+        <h1>Бүтээгдэхүүн</h1>
+        <section class="product_content">
+          <h4 style="display: none">1</h4>
+
+          <a href="#">
+            <article class="products">
+              <picture>
+                <img src="./homePage_image/bagts.webp" alt="Bagts" />
+              </picture>
+              <h2 class="overlay_text">Багц</h2>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="products">
+              <picture>
+                <img src="./homePage_image/nemelt.webp" alt="Nemelt" />
+              </picture>
+              <h2 class="overlay_text">Нэмэлт бүтээгдэхүүн</h2>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="products">
+              <picture>
+                <img src="./homePage_image/2.webp" alt="Cake11" />
+              </picture>
+              <h2 class="overlay_text">Бялуу</h2>
+            </article>
+          </a> 
+        </section>
+      </section>
+
+      <section class="News">
+        <h1>Онцлох мэдээ</h1>
+        <section class="information_part">
+          <h4 style="display: none">1</h4>
+
+          <section class="news1">
+            <h4 style="display: none">1</h4>
+
+            <a href="work.html" target="_blank">
+              <section class="news1_part">
+                <picture>
+                  <img loading="lazy" src="./homePage_image/news1.webp" alt="Amita hut workplace" />
+                </picture>
+                <h2 class="news1_title">Ажлын байр</h2>
+              </section> 
+            </a>
+
+            <a href="aboutUs.html" target="_blank">
+              <section class="cake_pic">
+                <picture>
+                  <img loading="lazy" src="./homePage_image/news2.webp" alt="cake" />
+                </picture>
+                <h2 class="news1_title">Манай байгууллага</h2>
+              </section>
+            </a>
+
+          </section>
+
+          <section class="news2">
+            <h4 style="display: none">1</h4>
+
+            <a href="#">
+              <section class="news2_part">
+                <picture>
+                  <img loading="lazy" src="./homePage_image/news3.webp" alt="cake" />
+                </picture>
+                <h2 class="news2_title">Сургалт</h2>
+              </section>
+            </a>
+
+            <a href="#">
+              <section class="news2_part">
+                <picture>
+                  <img loading="lazy" src="./homePage_image/news4.webp" alt="Branch" />
+                </picture>
+                <h2 class="news2_title">Үйлчилгээ</h2>
+              </section>
+            </a>
+
+            <a href="product.html">
+              <section id="odd_pic">
+                <picture>
+                  <img src="./homePage_image/news5.webp" alt="new product" />
+                </picture>
+                <h2 class="news2_title">Шинэ Бүтээгдэхүүн</h2>
+              </section>
+            </a>
+
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer-part></footer-part>
+
+    <script type="module" src="./javascript/menu_bar.js"></script>
+    <script type="module" src="./javascript/index.js"></script>
+    <script type="module" src="./javascript/header_footer.js"></script>
+  </body>
+</html>

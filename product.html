@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Amita</title>
+
+    <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+    <!-- <script src="./web-component/one-product.js"></script> -->
+    <script src="./web-component/order_component.js" type="module"></script>
+
+
+    <script src="javascript/product_loader.js"></script>
+    <script src="javascript/pop_up.js"></script>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html" aria-label="Go to homepage">
+            <div class="logo-container">
+                <picture class="logo">
+                    <img src="./amita_logo.webp.png">
+                </picture>
+                <div class="header-title">Amita Cake Studio</div>
+            </div>
+        </a>
+        <nav class="head_menu">
+            <ul>
+                <li><a href="index.html">Нүүр хуудас</a></li>
+                <li><a href="product.html">Бүтээгдэхүүн</a></li>
+                <li><a href="order.html">Захиалга</a></li>
+                <li><a href="aboutUs.html">Бидний тухай</a></li>
+                <li><a href="delivery.html">Манай хаяг</a></li>
+            </ul>
+            <section class="header_cart">
+                <div id="circle">
+                    <p id="add">0</p>
+                </div>
+                <i class="fa-solid fa-cart-shopping" id="cart" style="font-size:20px;"></i>
+                <button type="submit">Захиалга</button>
+            </section>
+            <section class="menu_bar"><i class="fa-solid fa-bars"></i></section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product_page">
+            <section class="products">
+                <section class="menu">
+                    <ul>
+                        <li><a href="#" data-category="all">БҮГД</a></li>
+                        <li><a href="#" data-category="cake">БЯЛУУ</a></li>
+                        <li><a href="#" data-category="drink">УУХ ЗҮЙЛС</a></li>
+                        <li><a href="#" data-category="addon">НЭМЭЛТ</a></li>
+                    </ul>
+                </section>
+                
+                
+
+                <section id="cake">
+                    <!-- Product List -->
+                    <article class="myproduct" data-name="p-1" data-category="cake">
+                        <a href="#">
+                            <picture>
+                                <img src="./product_image/4.jpg" alt="Бялуу">
+                            </picture>
+                        </a>
+                        <h3>Бялуу</h3>
+                        <p>6,000₮</p>
+                        <button type="submit">Сагсанд нэмэх</button>
+                    </article>
+
+                    <article class="myproduct" data-name="p-2" data-category="addon">
+                        <a href="#">
+                            <picture>
+                                <img src="./product_image/5.jpg" alt="">
+                            </picture>
+                        </a>
+                        <h3>Нэмэлт</h3>
+                        <p>8,000₮</p>
+                        <button type="submit">Сагсанд нэмэх</button>
+                    </article>
+
+                    <article class="myproduct" data-name="p-3" data-category="drink">
+                        <a href="#">
+                            <picture>
+                                <img src="./product_image/6.jpg" alt="Уух зүйл">
+                            </picture>
+                        </a>
+                        <h3>Уух зүйл</h3>
+                        <p>7,000₮</p>
+                        <button type="submit">Сагсанд нэмэх</button>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <aside class="cart">
+            <section class="caption">
+                <h2>Таны сагс</h2>
+            </section>
+
+            <section class="cart_empty">
+                <picture>
+                    <img src="./aboutUs/cart.svg" alt="Хоосон сагс">
+                </picture>
+                <p>Таны сагс хоосон байна</p>
+            </section>
+
+            <section class="cart_full">
+
+            </section>
+
+            <section class="order_button">
+                <section class="overall_price">
+                    <p>Нийт</p>
+                    <p id="total_price">0₮</p>
+                </section>
+                <button type="submit">Захиалах</button>
+            </section>
+        </aside>
+    </main>
+    <footer>
+
+        <section class="footer_top_section">
+
+            <section class="footer_logo">
+                <a href="#"><picture>
+                    <img src="./amita_logo.webp.png" alt="Amita logo" width="70%">
+                </picture></a>
+            </section>
+
+            <article class="about_us">
+                <h3>БИДНИЙ ТУХАЙ</h3>
+                <ul>
+                    <li>
+                        <a href="#">Бидний тухай</a>
+                    </li>
+                    <li>
+                        <a href="#">Нийгмийн хариуцлага</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="about_us">
+                <h3>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</h3>
+                <ul>
+                    <li>
+                        <a href="#">Илчлэгийн мэдээлэл</a>
+                    </li>
+                    <li>
+                        <a href="#">Холбоо барих</a>
+                    </li>
+                </ul>
+            </article>
+
+            <address class="join_us">
+                <h3>БИДЭНТЭЙ НЭГДЭХ</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </address>
+
+            <section class="comment">
+
+                <h3>САНАЛТ ХҮСЭЛТ</h3>
+
+                <form>
+                    <section class="input1">
+                        <div>
+                            <label for="email">Эмайл</label>
+                            <input type="email" name="mail" placeholder="tlmn0153@email.com">
+                            <br>
+                        </div>
+                        <div>
+                            <label for="phone">Утас</label>
+                            <input type="text" name="mail" placeholder="+976 ########">
+                            <br>
+                        </div>
+                    </section>
+
+                    <section class="input_text">
+                        <div>
+                            <label for="message">Мессеж</label>
+                            <textarea name="message" id="message" class="texting"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Илгээх">
+                        </div>
+                    </section>
+
+                </form>
+
+            </section>
+
+        </section>
+
+        <section class="footer_bottom_section">
+            <p>
+                2025 Монголын анхны Бялуу захиалгын веб сайт 'Respect for Amita cake Studio'
+            </p>
+
+        </section>
+
+    </footer>
+
+    <script src="./json/products.json"></script>
+    <script src="./javascript/menu_bar.js"></script>
+    <script src="./javascript/url.js"></script>
+    <script type="module" src="./javascript/header_footer.js"></script>
+</body>
+
+</html>
